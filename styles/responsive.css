@@ -8,6 +8,12 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 
 /* common use */
 .container {
@@ -95,9 +101,8 @@
   row-gap: 30px;
 }
 
-.card {
+/* .card {
   /* border: 2px solid red; */
-}
 .card h1 {
   text-align: center;
   margin-top: 10px;
@@ -123,6 +128,67 @@
   margin-top: 20px;
 }
 
+/* flower lover section */
+
+.flower-lover-section {
+  margin-top: 200px;
+}
+.lover-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+  /* border: 2px solid red; */
+}
+.lover-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+}
+.lover-left {
+  width: 100%;
+  height: 100%;
+  /* max-width: 100%; */
+}
+.lover-right li {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+/* join section */
+.join-title {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+.join-section {
+  background-image: url("../assets/news-letter-bg.png");
+  background-size: cover;
+
+  height: 400px;
+  width: 100%;
+
+  /* background-image: url("assets/news-letter-bg.png"); */
+}
+.join-container {
+  text-align: center;
+
+  padding: 150px;
+}
+.join-input {
+  background-color: white;
+  width: 550px;
+  height: 30px;
+  padding: 20px;
+}
+.join-btn {
+  width: 150px;
+  height: 40px;
+  margin-left: -5px;
+  background-color: #e95a08;
+  color: white;
+}
+
 @media screen and (max-width: 556px) {
   .nav-container .hide-display {
     display: none;
@@ -138,7 +204,7 @@
   }
   .fresh-container {
     display: flex;
-    /* flex-direction: column-reverse; */
+
     flex-direction: column-reverse;
   }
   .fresh-right img {
@@ -152,6 +218,16 @@
   .plants-header p {
     color: rgba(0, 0, 0, 0.5);
     padding: 0;
-    /* padding: 10px 100px 0px 100px; */
+  }
+  .lover-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .lover-left {
+    margin-top: -100px;
+  }
+  .lover-right {
+    padding: 20px;
+    margin-top: -60px;
   }
 }
