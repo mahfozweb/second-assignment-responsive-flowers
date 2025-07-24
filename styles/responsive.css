@@ -4,8 +4,35 @@
   padding: 0;
 }
 
-/* common */
+/* common use */
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+.bg-color {
+  background-color: rgb(245, 248, 255);
+}
+
+/* nav style */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+@media screen and (max-width: 556px) {
+  .nav-container .hide-display {
+    display: none;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
 }
