@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-.join-section {
+/* .join-section {
   background-image: url("../assets/news-letter-bg.png");
   background-size: cover;
 
@@ -8,7 +8,7 @@
   width: 100%;
 
   /* background-image: url("assets/news-letter-bg.png"); */
-}
+/* }
 .join-container {
   text-align: center;
 
@@ -31,4 +31,4 @@
   margin-left: -5px;
   background-color: #e95a08;
   color: white;
-}
+} */ */
