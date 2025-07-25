@@ -154,6 +154,7 @@
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
   margin-top: 20px;
+  list-style: disc;
 }
 /* join section */
 .join-title {
@@ -167,6 +168,7 @@
 
   height: 400px;
   width: 100%;
+  margin-top: 50px;
 
   /* background-image: url("assets/news-letter-bg.png"); */
 }
@@ -216,6 +218,73 @@
 #style {
   margin-left: 60px;
 }
+
+/* latest */
+.latest-header {
+  margin-top: 110px;
+  padding: 0 200px;
+}
+.left-first {
+  background-image: url("../assets/deal-bloom.png");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  border-radius: 14px;
+}
+.left-second {
+  background-image: url("../assets/deal-ana.png");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 50%;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-right {
+  background-image: url("../assets/deal-zabo.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 600px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-right h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.image-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.latest-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* width: 100%; */
+  height: 400px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  /* border: 2px solid red; */
+}
+.image-color {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 556px) {
   .nav-container .hide-display {
     display: none;
@@ -257,6 +326,10 @@
     padding: 20px;
     margin-top: -60px;
   }
+  .lover-right li {
+    /* padding-left: 30px; */
+    margin-left: 20px;
+  }
   .join-section {
     height: 350px;
     width: 100%;
@@ -286,7 +359,86 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  /* .footer-contain #style {
-    margin-left: 0;
+  .latest-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-left {
+    width: 500px;
+  }
+  .left-first {
+    background-image: url("../assets/deal-bloom.png");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 350px; */
+    border-radius: 14px;
+  }
+  .left-second {
+    background-image: url("../assets/deal-ana.png");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-right {
+    background-image: url("../assets/deal-zabo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    /* margin-bottom: 200px; */
+  }
+  .latest-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* width: 100%; */
+    height: 100%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    /* border: 2px solid red; */
+  }
+  .image-right h1 {
+    margin-left: 0px;
+  }
+  .latest-header p {
+    padding-left: 20px;
+  }
+  .latest-header {
+    margin-top: 110px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .join-container {
+    padding: 0px;
+    text-align: none;
+    padding-top: 70px;
+    margin-top: 300px;
   } */
 }
